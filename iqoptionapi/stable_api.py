@@ -325,7 +325,7 @@ class IQ_Option:
                 logging.error('**error** get_balance()')
 
             time.sleep(self.suspend)
-        return self.api.profile.balance
+        return self.api.profile.balance_id
 
     def get_balance(self):
         self.api.profile.balance = None
@@ -364,7 +364,7 @@ class IQ_Option:
                 logging.error('**error** get_balance_mode()')
                 pass
             time.sleep(self.suspend)
-        if self.api.profile.balance_type == 1:
+        if self.api.profile.balance_type ==o 1:
             return "REAL"
         elif self.api.profile.balance_type == 4:
             return "PRACTICE"
